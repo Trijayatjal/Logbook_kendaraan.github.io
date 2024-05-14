@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Logbook Kendaraan</title>
+        <link rel="stylesheet" href="https://codepen.io/gymratpacks/pe//fontn/VKzBEp#0">
+        <link href='https:s.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <form action="" method="post" name="logbook-form">
+        <h1> Logbook Kendaraan </h1>
+        
+        <fieldset>
+
+          <label for="nama">Nama :</label>
+          <input type="text" id="name" name="Nama" required>
+
+         <!-- <label for="jenis_log">Jenis Log :</label>
+          <select name="Jenis Log" id="jenis_log">
+            <option value="Pinjam">Pinjam</option>
+            <option value="Kembali">Kembali</option>
+          </select> -->
+
+          <label>Jenis Log :</label>
+          <input type="radio" id="pinjam" value="Pinjam" name="Jenis Log"><label for="pinjam" class="light" checked>Pinjam</label><br>
+          <input type="radio" id="kembali" value="Kembali" name="Jenis Log"><label for="kembali" class="light">Kembali</label><br>
+          <p>
+        
+          <label for="keperluan">Keperluan :</label>
+          <input type="text" id="keperluan" name="Keperluan" required>
+        
+         <!-- <label>Kendaraan :</label>
+          <input type="radio" id="avanza" value="Avanza" name="Kendaraan"><label for="avanza" class="light" checked>Avanza</label><br>
+          <input type="radio" id="l300" value="L300" name="Kendaraan"><label for="l300" class="light">L300</label><br>
+          <input type="radio" id="vario_m" value="Vario Merah" name="Kendaraan"><label for="vario_m" class="light">Vario Merah</label><br>
+          <input type="radio" id="vario_h" value="Vario Hitam" name="Kendaraan"><label for="vario_h" class="light">Vario Hitam</label><br> -->
+
+          <label for="kendaraan">Kendaraan :</label>
+          <select name="Kendaraan" id="kendaraan">
+            <option value="Avanza">Avanza</option>
+            <option value="L300">L300</option>
+            <option value="Vario Merah">Vario Merah</option>
+            <option value="Vario Hitam">Vario Hitam</option>
+          </select>
+    
+        </fieldset>
+       
+        <button type="submit" name="submit_b">Submit</button>
+        
+       </form>
+        </div>
+      </div>
+      
+      <script src="testing.js"></script>
+    </body>
+</html>
